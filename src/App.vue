@@ -3,6 +3,7 @@
     <nav class="navigation" v-if="showNav">
       <router-link to="/">Search Toolbar V1</router-link>
       <router-link to="/searchbarv2">Search Bar V2</router-link>
+      <router-link to="/toolbarv3">Toolbar V3</router-link>
     </nav>
     <router-view />
   </div>
@@ -13,7 +14,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
-const showNav = computed(() => route.path === '/' || route.path === '/searchbarv2')
+const showNav = computed(() => route.path === '/' || route.path === '/searchbarv2' || route.path === '/toolbarv3')
 </script>
 
 <style scoped>
