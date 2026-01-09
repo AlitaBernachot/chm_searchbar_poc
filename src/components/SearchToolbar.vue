@@ -45,85 +45,113 @@
 
       <!-- Results List -->
       <div class="results-list" data-name="Container" data-node-id="1:30">
-        <!-- Winter Hiking Section -->
-        <div class="result-section" data-name="Container" data-node-id="1:31">
-          <div class="section-header" data-name="Heading 3" data-node-id="1:32">
-            <p>Winter hiking (1)</p>
+        <!-- Best Matches Header -->
+        <div class="best-matches-header">
+          <div class="best-matches-title">
+            <svg class="sparkle-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="#9333ea" stroke="#9333ea" stroke-width="1.5"/>
+            </svg>
+            <span>Best matches (100)</span>
           </div>
-          <button class="result-item" data-name="Button" data-node-id="1:34">
-            <div class="result-number" data-name="Container" data-node-id="1:35">
-              <span>30</span>
+          <div class="feedback-buttons">
+            <button class="feedback-btn" title="Thumbs up">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 22V11M2 13V20C2 21.1046 2.89543 22 4 22H16.4262C17.907 22 19.1662 20.9197 19.3914 19.4562L20.4683 12.4562C20.7479 10.6389 19.3418 9 17.5032 9H14C13.4477 9 13 8.55228 13 8V4.46584C13 3.10399 11.896 2 10.5342 2C10.2093 2 9.91498 2.1913 9.78306 2.48812L7.26394 8.40614C7.09895 8.76727 6.74046 9 6.35013 9H4C2.89543 9 2 9.89543 2 11V13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="feedback-btn" title="Thumbs down">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 2V13M22 11V4C22 2.89543 21.1046 2 20 2H7.57377C6.09297 2 4.83379 3.08027 4.60863 4.54377L3.53169 11.5438C3.2521 13.3611 4.65823 15 6.49678 15H10C10.5523 15 11 15.4477 11 16V19.5342C11 20.896 12.104 22 13.4658 22C13.7907 22 14.085 21.8087 14.2169 21.5119L16.7361 15.5939C16.9011 15.2327 17.2595 15 17.6499 15H20C21.1046 15 22 14.1046 22 13V11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="difficulty-badge">
+            <svg class="tree-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L9 8H7L10 14H8L12 22L16 14H14L17 8H15L12 2Z" fill="#22c55e"/>
+            </svg>
+            <span>Hiking in Switzerland</span>
+          </div>
+          <div class="difficulty-indicator">
+            <span>Difficulty: <strong>easy</strong></span>
+          </div>
+        </div>
+
+        <!-- Hiking Results -->
+        <div class="result-section no-border">
+          <button class="result-item with-icon">
+            <div class="result-icon green">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z" fill="white"/>
+                <path d="M8 14L10 10L12 12L14 10L16 14M12 18V22M8 22H16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
-            <div class="result-title" data-name="Container" data-node-id="1:38">
-              <p>Sentiero Pian Cales</p>
+            <div class="result-title-flex">
+              <p>Trans Swiss Trail</p>
             </div>
-            <div class="result-location" data-name="Container" data-node-id="1:40">
-              <p>San Bernardino - San Bernardino</p>
+            <div class="result-location">
+              <p>Porrentruy - Mendrisio</p>
             </div>
           </button>
+          <button class="result-item with-icon">
+            <div class="result-icon green">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z" fill="white"/>
+                <path d="M8 14L10 10L12 12L14 10L16 14M12 18V22M8 22H16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="result-title-flex">
+              <p>Alpine Panorama Trail</p>
+            </div>
+            <div class="result-location">
+              <p>Rorschach - Genève</p>
+            </div>
+          </button>
+          <button class="result-item with-icon">
+            <div class="result-icon green">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z" fill="white"/>
+                <path d="M8 14L10 10L12 12L14 10L16 14M12 18V22M8 22H16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="result-title-flex">
+              <p>ViaJacobi</p>
+            </div>
+            <div class="result-location">
+              <p>Rorschach- &#47; Konstanz (D) - Charrot (Grenze)</p>
+            </div>
+          </button>
+          <button class="show-all-link">+ Show all</button>
         </div>
 
         <!-- Snowshoe Trekking Section -->
         <div class="result-section" data-name="Container" data-node-id="1:42">
           <div class="section-header" data-name="Heading 3" data-node-id="1:43">
-            <p>Snowshoe trekking (2)</p>
+            <p>Snowshoe trekking (1)</p>
           </div>
           <div class="section-items" data-name="Container" data-node-id="1:45">
             <button class="result-item" data-name="Button" data-node-id="1:46">
-              <div class="result-number" data-name="Container" data-node-id="1:47">
-                <span>556</span>
+              <div class="result-number pink" data-name="Container" data-node-id="1:47">
+                <span>558</span>
               </div>
               <div class="result-title" data-name="Container" data-node-id="1:50">
-                <p>Percorso Passo San Bernardino</p>
+                <p>Maran-Easy-Trapper-Schneeschuhtrail</p>
               </div>
               <div class="result-location" data-name="Container" data-node-id="1:52">
-                <p>San Bernardino - San Bernardino</p>
-              </div>
-            </button>
-            <button class="result-item" data-name="Button" data-node-id="1:54">
-              <div class="result-number" data-name="Container" data-node-id="1:55">
-                <span>557</span>
-              </div>
-              <div class="result-title-long" data-name="Container" data-node-id="1:58">
-                <p>Percorso Furestin</p>
-              </div>
-              <div class="result-location-long" data-name="Container" data-node-id="1:60">
-                <p>San Bernardino, Parcheggio Du Lac - San Bernardino, Parcheggio Du Lac</p>
+                <p>Arosa, Maran - Arosa, Maran</p>
               </div>
             </button>
           </div>
         </div>
 
-        <!-- Accommodation Section -->
+        <!-- Places Section -->
         <div class="result-section" data-name="Container" data-node-id="1:62">
           <div class="section-header" data-name="Heading 3" data-node-id="1:63">
-            <p>Accommodation (13)</p>
+            <p>Places, place names and streets (50)</p>
           </div>
           <div class="section-items" data-name="Container" data-node-id="1:65">
-            <button class="result-item-simple" data-name="Button" data-node-id="1:66">
-              <div class="result-title" data-name="Container" data-node-id="1:67">
-                <p>Jugendherberge Bern</p>
-              </div>
-              <div class="result-location-simple" data-name="Container" data-node-id="1:69">
-                <p>Bern</p>
-              </div>
-            </button>
-            <button class="result-item-simple" data-name="Button" data-node-id="1:71">
-              <div class="result-title" data-name="Container" data-node-id="1:72">
-                <p>La Pergola Bern</p>
-              </div>
-              <div class="result-location-simple" data-name="Container" data-node-id="1:74">
-                <p>Bern</p>
-              </div>
-            </button>
-            <button class="result-item-simple" data-name="Button" data-node-id="1:76">
-              <div class="result-title" data-name="Container" data-node-id="1:77">
-                <p>Moxy Bern Expo</p>
-              </div>
-              <div class="result-location-simple" data-name="Container" data-node-id="1:79">
-                <p>Bern</p>
-              </div>
-            </button>
+            <div class="place-item-simple">
+              <p><em>Populated Place Hochhus (WW) - Wolfenschiessen</em></p>
+            </div>
           </div>
         </div>
       </div>
@@ -138,15 +166,15 @@ const searchIcon = 'https://www.figma.com/api/mcp/asset/519cc906-1466-4ee6-8863-
 const clearIcon = 'https://www.figma.com/api/mcp/asset/9e7e2601-dbf8-4089-9acb-9ee5033ffae3'
 const closeIcon = 'https://www.figma.com/api/mcp/asset/17c34265-9a4f-4fdf-bec8-bb47c32e922d'
 
-const searchQuery = ref('bern')
+const searchQuery = ref('easy hikes')
 const showResults = ref(true)
 const activeFilter = ref('All')
 
 const filters = [
-  { name: 'All', count: 120 },
-  { name: 'Summer', count: 85 },
-  { name: 'Winter', count: 51 },
-  { name: 'Places, place names and streets', count: 32 }
+  { name: 'All', count: 153 },
+  { name: 'Summer', count: 100 },
+  { name: 'Winter', count: 1 },
+  { name: 'Places, place names and streets', count: 50 }
 ]
 </script>
 
@@ -155,12 +183,12 @@ const filters = [
   width: 100%;
   max-width: 893px;
   margin: 0 auto;
-  padding: 201px 20px 0;
+  padding: 40px 20px 0;
 }
 
 @media (max-width: 1200px) {
   .search-toolbar-container {
-    padding: 50px 20px 0;
+    padding: 20px 20px 0;
   }
 }
 
@@ -275,7 +303,7 @@ const filters = [
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  height: 507px;
+  max-height: 600px;
   overflow: hidden;
   padding: 1px;
   margin-top: 1px;
@@ -321,14 +349,102 @@ const filters = [
 .results-list {
   display: flex;
   flex-direction: column;
-  height: 446px;
+  flex: 1;
   overflow-y: auto;
+}
+
+/* Best Matches Header */
+.best-matches-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.best-matches-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Arimo', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.sparkle-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.feedback-buttons {
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.feedback-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.feedback-btn:hover {
+  background: #f5f5f5;
+}
+
+.feedback-btn svg {
+  width: 18px;
+  height: 18px;
+  color: #666;
+}
+
+.difficulty-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  background: #f0fdf4;
+  border: 1px solid #22c55e;
+  border-radius: 16px;
+  font-family: 'Arimo', sans-serif;
+  font-size: 12px;
+  color: #16a34a;
+  font-weight: 500;
+}
+
+.tree-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.difficulty-indicator {
+  font-family: 'Arimo', sans-serif;
+  font-size: 13px;
+  color: #666;
+}
+
+.difficulty-indicator strong {
+  color: #333;
+  font-weight: 600;
 }
 
 .result-section {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.result-section.no-border {
+  border-bottom: none;
 }
 
 .section-header {
@@ -363,6 +479,58 @@ const filters = [
   background: transparent;
   cursor: pointer;
   text-align: left;
+}
+
+.result-item.with-icon {
+  gap: 12px;
+}
+
+.result-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.result-icon.green {
+  background: #22c55e;
+}
+
+.result-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.result-title-flex {
+  flex: 1;
+  min-width: 0;
+}
+
+.result-title-flex p {
+  font-family: 'Arimo', sans-serif;
+  font-size: 14px;
+  color: #0a0a0a;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.show-all-link {
+  padding: 12px 16px;
+  border: none;
+  background: transparent;
+  font-family: 'Arimo', sans-serif;
+  font-size: 14px;
+  color: #e74c3c;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 500;
+}
+
+.show-all-link:hover {
+  background: rgba(0, 0, 0, 0.02);
 }
 
 .result-item:hover {
@@ -415,33 +583,20 @@ const filters = [
   font-weight: 400;
   line-height: 20px;
 }
-
-.result-location {
-  height: 20px;
-  width: 209.516px;
-  flex-shrink: 0;
+/* Places item */
+.place-item-simple {
+  padding: 12px 16px;
 }
 
-.result-location p {
+.place-item-simple p {
   font-family: 'Arimo', sans-serif;
   font-size: 14px;
-  color: #717182;
-  font-weight: 400;
-  line-height: 20px;
+  color: #666;
+  font-style: normal;
 }
 
-.result-location-long {
-  flex: 1;
-  height: 20px;
-  min-width: 0;
-}
-
-.result-location-long p {
-  font-family: 'Arimo', sans-serif;
-  font-size: 14px;
-  color: #717182;
-  font-weight: 400;
-  line-height: 20px;
+.place-item-simple em {
+  font-style: italic;
 }
 
 /* Simple Result Items (without number badge) */
