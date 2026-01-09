@@ -154,6 +154,14 @@ const filters = [
 .search-toolbar-container {
   width: 100%;
   max-width: 893px;
+  margin: 0 auto;
+  padding: 201px 20px 0;
+}
+
+@media (max-width: 1200px) {
+  .search-toolbar-container {
+    padding: 50px 20px 0;
+  }
 }
 
 /* Search Bar */

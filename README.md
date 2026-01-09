@@ -12,16 +12,21 @@ A search interface for the CHM (hiking) application, built with Vue.js 3 and Vit
   - Accommodation listings
 - 🎨 **Figma Design Implementation**: Pixel-perfect implementation from Figma design
 - 🖼️ **Icon Assets**: Uses remote Figma assets for icons
+- 🔀 **Multiple Routes**: Two different search bar implementations
+  - **Search Toolbar V1** (/) - Compact search toolbar with dropdown results
+  - **Search Bar V2** (/searchbarv2) - Full-screen search interface
 - ⚡ **Fast Development**: Built with Vite for instant hot module replacement
 
 ## Design Source
 
-This application implements the Figma design from:
-`https://www.figma.com/design/mMm7mNxUy2zxrANAFHDRhs/TEST_CHM_Search_bar?node-id=1-3`
+This application implements Figma designs from:
+- **V1**: `https://www.figma.com/design/mMm7mNxUy2zxrANAFHDRhs/TEST_CHM_Search_bar?node-id=1-3`
+- **V2**: `https://www.figma.com/design/mMm7mNxUy2zxrANAFHDRhs/TEST_CHM_Search_bar?node-id=1-2`
 
 ## Tech Stack
 
 - **Vue.js 3**: Progressive JavaScript framework with Composition API
+- **Vue Router 4**: Official router for Vue.js
 - **Vite**: Next-generation frontend tooling
 - **CSS3**: Custom styling with no external UI frameworks
 - **Google Fonts**: Arimo font family
@@ -35,10 +40,13 @@ chm_poc/
 ├── vite.config.js          # Vite configuration
 ├── src/
 │   ├── main.js            # Application entry point
-│   ├── App.vue            # Root component
+│   ├── App.vue            # Root component with router
 │   ├── style.css          # Global styles
+│   ├── router/
+│   │   └── index.js       # Vue Router configuration
 │   └── components/
-│       └── SearchToolbar.vue  # Main search toolbar component
+│       ├── SearchToolbar.vue  # V1: Compact search toolbar
+│       └── SearchBarV2.vue    # V2: Full-screen search interface
 └── README.md              # This file
 ```
 
@@ -61,6 +69,10 @@ npm install
 Start the development server:
 ```bash
 npm run dev
+
+**Available Routes:**
+- `/` - Search Toolbar V1 (compact version)
+- `/searchbarv2` - Search Bar V2 (full-screen version)
 ```
 
 The application will be available at `http://localhost:5173`
@@ -83,9 +95,9 @@ npm run preview
 
 ## Component Structure
 
-### SearchToolbar.vue
+### SearchToolbar.vue (V1 - Compact)
 
-The main component includes:
+The original compact search toolbar includes:
 
 1. **Search Bar**
    - Search icon
@@ -103,6 +115,27 @@ The main component includes:
    - **Winter hiking**: Trail results with numbered badges
    - **Snowshoe trekking**: Route results with numbered badges
    - **Accommodation**: Hotel/hostel listings
+
+### SearchBarV2.vue (V2 - Full Screen)
+
+The full-screen search interface includes:
+
+1. **Search Header**
+   - Large search icon
+   - Full-width text input
+   - Clear and close buttons
+   - Clean, minimalist design
+
+2. **Filter Section**
+   - Pill-shaped filter buttons
+   - Active state highlighting
+   - Horizontal scrolling for mobile
+
+3. **Results Display**
+   - Full-screen scrollable results
+   - Same categorized structure as V1
+   - Bold highlighting of search terms
+   - Enhanced spacing for readability
 
 ## Customization
 
